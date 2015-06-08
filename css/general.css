@@ -1,0 +1,8 @@
+a.bit.btn.btn-default{
+	border-radius:15px !important;
+}
+
+a.place.btn.btn-default{
+	border-color:#FFFFFF;
+	pointer-events:none;
+}

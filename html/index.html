@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/general.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="../js/general.js"></script>
+  <link rel="icon" type="image/ico" href="../res/favicon.ico"/>
 </head>
 <body>
 <div class="container">
@@ -16,9 +18,35 @@
     <p>An interactive tool to play with binary numbers</p>
   </div>
 
+  <h4>Binary (Base-2) Value:</h4>
+  
+  <div class="btn-group btn-group-justified" role="group" aria-label="binaryData">
+      <a class="bit btn btn-default" data-place="128" id="place128" role="button">0</a>
+      <a class="bit btn btn-default" data-place="64" id="place64" role="button">0</a>
+      <a class="bit btn btn-default" data-place="32" id="place32" role="button">0</a>
+      <a class="bit btn btn-default" data-place="16" id="place16" role="button">0</a>
+      <a class="bit btn btn-default" data-place="8" id="place8" role="button">0</a>
+      <a class="bit btn btn-default" data-place="4" id="place4" role="button">0</a>
+      <a class="bit btn btn-default" data-place="2" id="place2" role="button">0</a>
+      <a class="bit btn btn-default" data-place="1" id="place1" role="button">0</a>
+  </div>
 
+  <div class="btn-group btn-group-justified" role="group" aria-label="binaryLabels">
+      <a class="place btn btn-default" role="button">128</a>
+      <a class="place btn btn-default" role="button">64</a>
+      <a class="place btn btn-default" role="button">32</a>
+      <a class="place btn btn-default" role="button">16</a>
+      <a class="place btn btn-default" role="button">8</a>
+      <a class="place btn btn-default" role="button">4</a>
+      <a class="place btn btn-default" role="button">2</a>
+      <a class="place btn btn-default" role="button">1</a>
+  </div>
 
-
+  <h4>Decimal (Base-10) Value:</h4>
+  <center>
+    <h2 id="decimalResult"></h2>
+    <h2 id="binaryResult"></h2>
+  </center>
 </div> <!--end container-->
 
 <br><br>
