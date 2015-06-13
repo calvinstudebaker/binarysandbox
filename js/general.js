@@ -31,12 +31,12 @@ $(document).ready(function(){
 
 		//display sum on page
 		if (resultString.length == 0){
-			resultString = "0 = 0";
+			resultString = "0<sub>10</sub> = 0<sub>10</sub>";
 		} else{
-			resultString = resultString.substring(0, resultString.length-2) + "= " + String(result);
+			resultString = resultString.substring(0, resultString.length-3) + "<sub>10</sub> = " + String(result) + "<sub>10</sub>";
 		}
 
-		binaryString = binaryString + " = " + String(result);
+		binaryString = binaryString + "<sub>2</sub> = " + String(result) + "<sub>10</sub>";
 		$("#decimalResult").html(resultString);
 		$("#binaryResult").html(binaryString);
 	})
